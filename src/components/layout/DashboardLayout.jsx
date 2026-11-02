@@ -56,7 +56,7 @@ export function DashboardLayout({ role }) {
   const isRtl = i18n.dir() === 'rtl'
 
   const items =
-    role === 'ADMIN'
+    role === 'admin'
       ? [
           { to: '/admin', end: true, icon: LayoutDashboard, label: t('nav.overview') },
           { to: '/admin/providers', icon: ShieldCheck, label: t('admin.providers') },
@@ -72,7 +72,7 @@ export function DashboardLayout({ role }) {
           },
         ]
 
-  const title = role === 'ADMIN' ? t('admin.title') : t('providerDash.title')
+  const title = role === 'admin' ? t('admin.title') : t('providerDash.title')
 
   function handleLogout() {
     logout()
